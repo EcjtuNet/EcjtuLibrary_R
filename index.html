@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>图书馆</title>
+	<link type="text/css" rel="stylesheet" href="css/reset.css" >
+	<link type="text/css" rel="stylesheet" href="css/style.css" >
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/myjs.js"></script>
+</head>
+
+<body>
+
+	<div class="sideBar">
+		<div class="sideBar_show">
+			<div class="sideBar_button"><a id="sideBar_img" href="javascript:showdiv_1();"></a></div>
+			<ul>
+				<li><div class="sideBar_img_box"><a class="sideBar_img" id="sideBar_img1" href="#"></a></div><span class="sideBar_show_span">学科馆员</span></li>
+				<li><div class="sideBar_img_box"><a class="sideBar_img" id="sideBar_img2" href="#"></a></div><span class="sideBar_show_span">邮箱咨询</span></li>
+				<li><div class="sideBar_img_box"><a class="sideBar_img" id="sideBar_img3" href="#"></a></div><span class="sideBar_show_span">联系电话</span></li>
+				<li><div class="sideBar_img_box"><a class="sideBar_img" id="sideBar_img4" href="#"></a></div><span class="sideBar_show_span">在线咨询</span></li>
+				<li><div class="sideBar_img_box"><a class="sideBar_img" id="sideBar_img5" href="#"></a></div><span class="sideBar_show_span">官方微博</span></li>
+				<li><div class="sideBar_img_box"><a class="sideBar_img" id="sideBar_img6" href="#"></a></div><span class="sideBar_show_span">官方微信</span></li>
+			</ul>
+		</div>
+		<div id="sideBar_hiv" style="display: none;">
+			<div class="sideBar_hiv_back"><a class="sideBar_hiv_back_img" href="javascript:hidediv_1();"></a></div>
+			<ul>
+				<li>
+					<a>读者借阅查询</a>
+				</li>
+				<li>
+					<a>馆藏书目查询</a>
+				</li>
+				<li>
+					<a>硕士论文提交</a>
+				</li>
+				<li>
+					<a>昌北高校图书馆联盟</a>
+				</li>
+				<li>
+					<a>中国图书分类法</a>
+				</li>
+				<li>
+					<a>中外文核心期刊目录</a>
+				</li>
+				<li>
+					<a>图书分布情况</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="light_top">
+		<a href="">
+			<img id="light_top_img" src="images/light-top.png">
+			<span id="light_top_span">旧</span>
+		</a>	
+	</div>
+
+
+	<div id="header">
+		<div class="header_top">
+			<ul>
+				<li><a href="#"><i class="header_top_i">设为首页</i></a></li>
+				<li><a href="#"><i class="header_top_i">收藏本站</i></a></li>
+				<li><a href="#"><i class="header_top_i">交大首页</i></a></li>
+			</ul>
+		</div>
+		<div class="header">
+			<div class="header_box">
+				<div class="head_logo">
+					<img class="head_logo1" src="images/logo1.png">
+					<div class="head_logo_down">
+						<img class="head_logo2" src="images/logo2.png">
+						<img class="head_logo3" src="images/logo3.png">
+					</div>
+				</div>
+				<div class="head_link">
+					<ul class="head_link_det">
+						<li><img src="images/header-link-l.png"></li>
+						<li id="head_link_1">
+							<a href="#">本馆概况</a>
+							<ul class="head_link_hiv" id="head_link_hiv_1">
+								<li><a href="#">本馆介绍</a></li>
+								<li><a href="#">组织结构</a></li>
+								<li><a href="#">平面布局</a></li>
+								<li><a href="#">规章制度</a></li>
+							</ul>
+						</li>
+						<li id="head_link_2">
+							<a href="#">读者服务</a>
+							<ul class="head_link_hiv" id="head_link_hiv_2">
+								<li><a href="#">入馆须知</a></li>
+								<li><a href="#">借阅规则</a></li>
+								<li><a href="#">开放时间</a></li>
+								<li><a href="#">图书荐购</a></li>
+							</ul>
+						</li>
+						<li id="head_link_3">
+							<a href="#">参考咨询</a>
+							<ul class="head_link_hiv" id="head_link_hiv_3">
+								<li><a href="#">参考服务</a></li>
+								<li><a href="#">文献传递</a></li>
+								<li><a href="#">读者培训</a></li>
+								<li><a href="#">代办查新、收引</a></li>
+							</ul>
+						</li>
+						<li id="head_link_4">
+							<a href="#">党群园地</a>
+							<ul class="head_link_hiv" id="head_link_hiv_4">
+								<li><a href="#">党建之窗</a></li>
+								<li><a href="#">职工风采</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">教材服务</a>
+						</li>
+						<li><img src="images/header-link-r.png"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="main">
+		<div class="middle_part">
+			<div class="middle_left">
+				<div class="wrapper">
+					<img class="book" src="images/book.png">
+					<div class="login">
+						<div class="login_pic">
+							<img src="images/login.png">
+						</div>
+						<div class="login_left">
+						<!-- <div class="search1">
+							<div class="icon"><img src="images/l1.png"></div>
+							<select>
+								<option>登录方式</option>
+								<option value="1">学(工)号</option>
+								<option value="2">借书证号</option>
+							</select>
+						</div> -->
+							
+							<div id="search1">	
+							    <input type="text" value="登录方式" class="sou" id="sou" onclick="loginShow();"></input>
+							    <!-- 应该绑定到input上 否则 下拉的收回去会失效 -->
+							    <div class="icon"><img src="images/l1.png" ></div>
+							    <ul id="login_e">
+							    	<li id="li1" onclick="loginHide1();" value="1">学(工)号</li>
+							    	<li id="li2" onclick="loginHide2();" value="2">借书证号</li>
+							    </ul>
+			   				</div>
+			   				<div id="search">
+							    <input type="text" value="学(工) / 证号" class="sou"></input>
+							    <div class="icon"><img src="images/l2.png"></div>
+			   				</div>
+			   				<div id="search">
+							    <input type="text" value="密码" class="sou"></input>
+							    <div class="icon"><img src="images/l3.png"></div>
+			   				</div>
+						</div>
+						<div class="login_right">
+							<div class="r1"></div>
+							<div class="r2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="middle_right">
+				<table class="wrapper">
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="t1_4 mtro_c">
+							<a href="#">
+                				<div class="mask">
+                					<h3>试用数据库</h3>
+                       					<p>包含了各类中外文试用的各种形式的电子资源</p>
+                        		</div>
+                    		</a>
+                    	</td>
+						<td class="t1_5"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="t2_1 mtro_c">
+							<a href="#">
+                 				<div class="mask">
+                    				<h3>个人信息</h3>
+                				</div>
+             				</a>
+						</td>
+						<td class="t2_2 mtro_c">
+							<a href="#">
+                  				<div class="mask">
+                    				<h3>中文数据库</h3>
+                    				<p>
+                        				包含学术期刊、学
+                        				术论文、电子图书，
+                        				学术视频等中文电
+                        				子资源
+                    				</p>
+                  				</div>
+              				</a>
+						</td>
+						<td class="t2_3"></td>
+						<td class="t2_4"></td>
+						<td class="t2_5 mtro_c">
+							<a href="#">
+                  				<div class="mask">
+                					<h3>学科导航</h3>
+                					<p>包含本校相关十类专业的相关动态和资源</p>
+                  				</div>
+              				</a>
+						</td>
+						<td class="t2_6"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="t3_2"></td>
+						<td class="t3_3 mtro_c">
+							<a href="#">
+                 			 	<div class="mask">
+                    					<h3>外文数据库</h3>
+                    					<p>包含英文学术期刊、英文电子图书等外文资源。</p>
+                  				</div>
+              				</a>
+						</td>
+						<td></td>
+						<td></td>
+						<td class="t3_6 mtro_c">
+							<a href="#">
+                  				<div class="mask">
+                    					<h3>站内搜索</h3>
+                  				</div>
+                  			</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="below_part">
+			<div class="below_left">
+				<div class="below_main">
+					<div class="below_title">
+						<span id="t1">昌</span>
+						<span id="t2">北</span>
+						<span id="t3">高</span>
+						<span id="t4">校</span>
+						<span id="t5">教</span>
+						<span id="t6">学</span>
+						<span id="t7">图</span>
+						<span id="t8">书</span>
+						<span id="t9">馆</span>
+					</div>
+					<div class="below_nav">
+						<div class="below_options">
+							<ul>
+								<li><a id="o1" href="javascript:void(0)" onclick="triShow(1)">知识</a><img id="btm_icon1" src="images/btm_icon.png"></li>
+								<li class="o1"><a id="o2" href="javascript:void(0)" onclick="triShow(2)" style="color:#17BD9B;">图书</a><img id="btm_icon2" style="margin:4px 9px auto 9px;display:block"src="images/btm_icon.png"></li>
+								<li class="o1"><a id="o3" href="javascript:void(0)" onclick="triShow(3)">期刊</a><img id="btm_icon3"src="images/btm_icon.png"></li>
+								<li class="o1"><a id="o4" href="javascript:void(0)" onclick="triShow(4)">报纸</a><img id="btm_icon4"src="images/btm_icon.png"></li>
+								<li class="o1"><a id="o5" href="javascript:void(0)" onclick="triShow(5)">论文</a><img id="btm_icon5"src="images/btm_icon.png"></li>
+								<li class="o1"><a id="o6" href="javascript:void(0)" onclick="triShow(6)">专利</a><img id="btm_icon6"src="images/btm_icon.png"></li>
+								<li class="o1"><a id="o7" href="javascript:void(0)" onclick="triShow(7)">标准</a><img id="btm_icon7"src="images/btm_icon.png"></li>
+								<li class="o1"><a id="o8" href="javascript:void(0)" onclick="triShow(8)">视频</a><img id="btm_icon8"src="images/btm_icon.png"></li>
+							</ul>
+						</div>	
+						<div id="search">
+						    <input type="text" value="" class="sou"></input>
+						    <div class="icon"><img src="images/pic3.png"></div>
+			   			</div>
+		   				<div class="search2">
+		   					<a href="">高级检索</a>
+		   					<a href="">使用帮助</a>
+		   				</div>
+						<div class="search3">
+							<div class="s1"><img id="s1" onclick="dotAnimate1();" src="images/search3.png">作者</div>
+							<div class="s1"><img id="s2"onclick="dotAnimate2();" src="images/search3.png">书名</div>
+							<div class="s1"><img id="s3"onclick="dotAnimate3();" src="images/search3.png">全部字段</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="below_right">
+				<div class="title">
+					<div id="gonggao" onmouseover="gonggaoShow();">新闻公告</div>
+					<div id="dongtai" onmouseover="dongtaiShow();">资源动态</div>
+					<a href="" class="more">MORE</a>
+				</div>
+				<div id="wrapper_1">
+					<ul>
+						<li class="w1"><a href="">关于暑假期间图书馆开放安排的通知</a></li>
+						<li class="w2">2015-07-07</li>
+					</ul>
+					<ul>
+						<li class="w1"><a href="">关于2015年硕士毕业生提交学位论文的通知</a></li>
+						<li class="w2">2015-08-10</li>
+					</ul>
+					<ul>
+						<li class="w1"><a href="">我馆在昌北联盟游泳比赛中获得佳绩</a></li>
+						<li class="w2">2015-05-28</li>
+					</ul>
+					<ul>
+						<li class="w1"><a href="">“我与图书馆”微电影大赛通告</a></li>
+						<li class="w2">2015-04-22</li>
+					</ul>
+					<ul>
+						<li class="w1"><a href="">我校选手再次在搜索竞赛中获得佳绩</a></li>
+						<li class="w2">2015-05-25</li>
+					</ul>
+				</div>
+				<div id="wrapper_2">
+					<ul>
+						<li class="w1"><a href="">aaaaaaaaaaaaaaaaa</a></li>
+						<li class="w2">2015-11-11</li>
+					</ul>
+					<ul>
+						<li class="w1"><a href="">aaaaaaaaaaaaaaaaaaaaaaaa</a></li>
+						<li class="w2">2015-22-22</li>
+					</ul>
+					<ul>
+						<li class="w1"><a href="">aaaaaaaaaaaaaa</a></li>
+						<li class="w2">2015-33-28</li>
+					</ul>
+					<ul>
+						<li class="w1"><a href="">aaaaaaaaaaaaaa</a></li>
+						<li class="w2">2015-88-22</li>
+					</ul>
+					<ul>
+						<li class="w1"><a href="">aaaaaaaaaaaaaaaa</a></li>
+						<li class="w2">2015-05-99</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="line"></div>
+		<div class="wrapper">
+			<a href="">读者学社</a>
+			<a href="">图书捐赠</a>
+			<a href="">软件下载</a>
+			<a href="">馆藏统计</a>
+			<a href="">社会化服务</a>
+			<a href="">交大VPN</a>
+			<a href="">移动图书馆</a>
+		</div>
+		<div class="p">
+			<p class="p1">COPYRIGHT@2012 版权所有:图书馆信息技术中心</p>
+			<p class="p2">ALLRight Reserved 2012年9月</p>
+		</div>
+	</div>
+</body>
+</html>
